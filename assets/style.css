@@ -155,7 +155,28 @@ body {
 #container-openweathermap-widget-21:hover{
   transform: translateY(-10px);
 }
+.weather-widget-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
 
+#openweathermap-widget-21 {
+  width: 100% !important;
+  transition: all 0.3s ease-in-out;
+}
+
+#openweathermap-widget-21:hover {
+  transform: translateY(-10px);
+}
+
+@media (max-width: 768px) {
+  .weather-widget-container {
+    padding: 0 10px;
+  }
+}
 .mode-switch {
   padding: 20px;
   background-color: #fff;
