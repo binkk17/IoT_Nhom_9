@@ -1,0 +1,498 @@
+.home, .setting{
+  transition: all 0.3s ease-in-out;
+}
+
+.home:hover, .setting:hover{
+  transform: translateX(-10px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+}
+
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background-color: #ffffff68;
+  color: #333;
+  position: fixed;
+  border-right: 1px solid #dee2e6;
+  height: 100%;
+  transition: all 0.3s;
+}
+.sidebar-header {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 1px solid #dee2e6;
+}
+.LinkBox{
+  border-right: 4px solid rgba(0, 0, 0, 0.59);
+  background-color: rgba(0, 0, 0, 0.208);
+}
+.navbar {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar ul.components {
+  padding: 0;
+}
+
+#sidebar ul li {
+  padding: 10px;
+  font-size: 18px;
+}
+
+#sidebar ul li:hover {
+  background-color: rgb(240, 238, 238);
+}
+
+#sidebar a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+
+#sidebar .sidebar-footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: 14px;
+}
+
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.container1 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card .icon {
+  font-size: 40px;
+  color: #333;
+}
+
+.card .stat-value {
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.card .stat-title {
+  font-size: 16px;
+  color: #666;
+}
+
+.current_threshold {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.current_threshold:hover{
+  transform: translateY(-10px);
+}
+
+.current_threshold .title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.current_threshold .value {
+  font-size: 24px;
+  color: #000;
+  font-weight: bold;
+}
+
+#container-openweathermap-widget-21{
+  transition: all 0.3s ease-in-out;
+}
+
+#container-openweathermap-widget-21:hover{
+  transform: translateY(-10px);
+}
+
+.mode-switch {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.mode-switch:hover{
+  transform: translateY(-10px);
+}
+
+.mode-switch select {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  border: 1px solid #999;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+
+.manual-control {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.manual-control button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.manual-control button:hover {
+  background-color: #555;
+}
+
+
+.current-state {
+  margin-top: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.current-state:hover{
+  transform: translateY(-10px);
+}
+
+.current-state .pump {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.current-state .value {
+  font-size: 24px;
+  color: #555;
+}
+
+
+@media (max-width: 992px) {
+  #sidebar {
+    width: 200px;
+  }
+
+  .content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #sidebar .sidebar-footer {
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+  }
+
+  .manual-control button {
+    margin-bottom: 10px;
+  }
+}
+
+
+.content .container2 {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.content .container2:hover{
+  transform: translateY(-10px);
+}
+
+
+.threshold-input {
+  margin-bottom: 20px;
+}
+
+.range-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  margin-right: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  background-color: #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+  -webkit-appearance: none; 
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.threshold-input span {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
+}
+
+.content .container2 button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.content .container2 button:hover {
+  background-color: rgba(128, 128, 128, 0.463);
+  transform: translateY(-5px);
+  color: black;
+}
+
+
+.current-state {
+  background-color: #f9f9f9; 
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  padding: 20px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  margin-top: 20px; 
+  font-family: 'Arial', sans-serif; 
+}
+
+.current-state .pump {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  font-size: 18px; 
+  font-weight: bold; 
+  color: #333; 
+}
+
+.current-state .pump .value {
+  color: white; 
+  padding: 5px 15px; 
+  border-radius: 5px; 
+  font-size: 16px; 
+}
+
+.current-state .pump .value.on {
+  background-color: #28a745; 
+}
+
+.current-state .pump .value.off {
+  background-color: #ff4b5c; 
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50; 
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.pump-state {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+}
+
+.weatherWrap label {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.weatherWrap input, .wifiSetting input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.container2 input:focus {
+  border-color: black;
+  outline: none;
+}
+
+#id-weather {
+  margin-top: 10px;
+}
+
+.notification {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  color: #333;
+  padding: 15px 20px;
+  border-left: 5px solid black;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(-20px);
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.notification i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: black;
+}
+
+.notification.show {
+  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.close-btn {
+  margin-left: 15px;
+  color: #888;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.close-btn:hover {
+  color: #555;
+}
