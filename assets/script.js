@@ -67,7 +67,7 @@ client.on('message', (topic, message) => {
       const rawLightValue = parseInt(data.lux)
       // const lightValue = Math.round((rawLightValue / 1023) * 100) // Chuyển đổi thành phần trăm
       // document.querySelector('.light-value').innerText = lightValue  
-      const lightText = (rawLightValue / 1023) * 100 > 50 ? 'Sáng' : 'Tối'
+      const lightText = (rawLightValue / 1023) * 100 > 50 ? 'Tối' : 'Sáng'
       document.querySelector('.light-value').innerText = lightText    
       document.querySelector('.pop-value').innerText = `${data.rainProbability}`
       if(data.pourState=="1"){
