@@ -176,9 +176,10 @@ if(document.getElementById('modeToggle')){
     if (pumpToggle.checked) {
       const time = document.querySelector("#timePour").value
       if(time=="" || time=="0"){
-        document.querySelector("#notificationMessage").innerHTML = "Vui lòng điền thời gian !"
-        showNotification()
-        pumpToggle.checked = false
+        // document.querySelector("#notificationMessage").innerHTML = "Vui lòng điền thời gian !"
+        // showNotification()
+        // pumpToggle.checked = false
+          document.querySelector("#timePour").value = "30"
       }
       else{
         pumpStateText.textContent = 'ON'
