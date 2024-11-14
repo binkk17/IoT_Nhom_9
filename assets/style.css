@@ -14,7 +14,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
+  background-color: #edad2b;
   color: #333;
   margin: 0;
 }
@@ -23,10 +23,10 @@ body {
 #sidebar {
   min-width: 250px;
   max-width: 250px;
-  background-color: #ffffff68;
-  color: #333;
+  background-color: #ee470068;
+  color: #cb0707;
   position: fixed;
-  border-right: 1px solid #dee2e6;
+  border-right: 1px solid #beec1a;
   height: 100%;
   transition: all 0.3s;
 }
@@ -35,7 +35,7 @@ body {
   padding: 20px;
   font-size: 1.5rem;
   font-weight: bold;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #ffa600;
 }
 .LinkBox{
   border-right: 4px solid rgba(0, 0, 0, 0.59);
@@ -55,7 +55,7 @@ body {
 }
 
 #sidebar ul li:hover {
-  background-color: rgb(240, 238, 238);
+  background-color: rgb(235, 15, 15);
 }
 
 #sidebar a {
@@ -155,28 +155,7 @@ body {
 #container-openweathermap-widget-21:hover{
   transform: translateY(-10px);
 }
-.weather-widget-container {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto 20px;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
 
-#openweathermap-widget-21 {
-  width: 100% !important;
-  transition: all 0.3s ease-in-out;
-}
-
-#openweathermap-widget-21:hover {
-  transform: translateY(-10px);
-}
-
-@media (max-width: 768px) {
-  .weather-widget-container {
-    padding: 0 10px;
-  }
-}
 .mode-switch {
   padding: 20px;
   background-color: #fff;
