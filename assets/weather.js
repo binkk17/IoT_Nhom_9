@@ -1,7 +1,7 @@
 let objectWeather = {
   id: 21,
   cityid: '',
-  appid: '50d39c1746bc442a55225b4962015b74',
+  appid: '',
   units: 'metric',
   containerid: 'openweathermap-widget-21',
 }
