@@ -2,8 +2,8 @@ const clientId = 'web_' + Math.random().toString(16).substr(2, 8)
 const mqttServer = 'wss://d719acaa6edb43049323600c93163977.s1.eu.hivemq.cloud:8884/mqtt'
 const options = {
     clientId: clientId,
-    username: 'hivemq.webclient.1731232619432',
-    password: 'Lz41Z0A!q*;3hGRtkaB#',
+    username: 'hivemq.webclient.1731591606333',
+    password: 'djP.O?n,TK7w9Gr<1U0c',
     clean: true
 }
 const client = mqtt.connect(mqttServer, options)
